@@ -22,7 +22,7 @@ jobs:
       run: cd frontend
     - name: Install dependencies
       run: yarn
-    - name: Run the tests
-      run: yarn test --watchAll=false
     - name: Build
       run: yarn build
+    - name: Run the tests
+      run: yarn test

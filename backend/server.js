@@ -11,7 +11,7 @@ server.get("/", (req, res) => {
   res.send("API is Running");
 });
 
-server.get("/api/articles", (req, res) => {
+server.get("/api/articles/:id", (req, res) => {
   const article = articles.find((n) => n._id === req.params.id);
   res.json(article);
 });

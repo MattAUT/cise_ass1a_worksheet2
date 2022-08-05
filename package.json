@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "cd frontend && npm test",
+    "test": "npm test",
     "start": "nodemon backend/server.js"
   },
   "author": "",

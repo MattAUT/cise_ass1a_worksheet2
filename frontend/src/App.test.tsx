@@ -1,9 +1,14 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("renders button", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const element = screen.getByText(/Increment count/i);
+  expect(element).toBeInTheDocument();
+});
+
+describe("Addition", () => {
+  it("knows that 2 and 2 make 4", () => {
+    expect(2 + 2).toBe(4);
+  });
 });
